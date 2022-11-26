@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="testName w-75 border-bottom m-auto pt-5 pb-2">
+      <h1 class="text-muted">
+        <span class="text-danger">CRUDS</span>  System
+      </h1>
+    </div>
+    <div class="w-75 my-5 mx-auto text-uppercase">
+      <label for="studentNameInput">student Name</label>
+      <input type="text" id="studentNameInput" class="form-control mb-3" />
+      <h6 class="text-danger fw-light" id="messageValidation"></h6>
+      <label for="">student phone</label>
+      <input type="number" id="studentPHONEInput" class="form-control mb-3" />
+      <h6 class="text-danger fw-light" id="messageValidation"></h6>
+      <label for="">student Grade</label>
+      <input type="text" id="studentGRADEInput" class="form-control mb-3" />
+      <h6 class="text-danger fw-light" id="messageValidation"></h6>
+      <label for="">Description</label>
+      <input type="text" id="studentDesInput" class="form-control mb-3" />
+      <h6 class="text-danger fw-light" id="messageValidation"></h6>
+      <button  class="btn bg-success fw-bold" id="addBtn">
+        Add student
+      </button>
+      
+    </div>
+    <div class="search-tem w-75 m-auto">
+      <input onkeyup="searchData(this.value)" type="text" id="searTearm" class="form-control" placeholder="Search..." />
+    </div>
+    <div class="w-75 mx-auto py-5">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>phone</th>
+            <th>Grade</th>
+            <th>Desc</th>
+            <th>Delete</th>
+            <th>Update</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+
+          
+        </tbody>
+      </table>
+    </div>
+    <footer class="bg-dark text-center py-5 text-light">
+      <h6>Copyright © Khaled Gamal</h6>
+      <div class="icons">
+        <a
+          href=""
+          class="nav-link text-light fab fa-linkedin-in px-3"
+        ></a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
